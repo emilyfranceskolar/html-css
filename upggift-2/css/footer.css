@@ -1,0 +1,112 @@
+footer {
+    /* border: 1px solid red; */
+    grid-area: footer;
+    background-color: #01060b;
+
+    .container {
+        /* border: 1px solid #ff0000; */
+        font-family: "Oswald", sans-serif;
+        font-style: normal;
+        background-color: #0d2743;
+        color: white;
+        padding-top: 24px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+        .capitol-logo {
+            margin: 0 auto;
+            
+            p {
+                font-family: "Permanent Marker", cursive;
+                font-weight: 400;
+                font-size: 72px;
+                color: #ffd99f;
+            }
+            /* img {
+                height: 72px;
+            } */
+        }
+
+        .link-container {
+            /* border: 1px solid red; */
+            padding: 24px 24px;
+            display: flex;
+            margin: 0 auto;
+            /* justify-content: center; */
+            gap: 108px;
+            
+            .link-row {  
+                /* border: 1px solid red; */
+                h4 {
+                    color:#d60305;
+                    font-family: "Oswald", sans-serif;
+                    font-weight: 300;
+                    text-transform: uppercase;
+                }
+                a, p {
+                    text-decoration: none;
+                    color: white;
+                }
+                .icons {
+                    display: flex;
+                    justify-self: center;
+                    gap:12px
+                }
+                .icons:hover {
+                    display: flex;
+                    justify-self: center;
+                    gap:12px
+                }
+            }
+        }
+
+        .newsletter-container {
+            display:flex;
+            flex-direction: column;
+            justify-content: center;
+            
+            .thin-divider{
+                background-color: #ffd99f;
+                width: 60%;
+                margin: 0 auto;
+                display: block;
+                height: 1px;
+            }
+
+            .newsletter {
+                font-family: "Oswald", sans-serif;
+                font-weight: 400;
+                font-size: 24px;
+                padding: 12px;
+                text-transform: uppercase;
+                margin: 0 auto;
+
+            }
+            .newsletter-link {
+                margin: 0 auto;
+                padding: 12px;
+                a {
+                    color:white;
+                    
+                }
+            }
+            
+            .thin-divider-2{
+               background-color: #ffd99f;
+               width: 80%;
+               margin: 0 auto;
+               display: block;
+               height: 1px;
+           }
+            img.europa-cinema {
+                padding-top: 24px;
+                margin: 0 auto;
+                width:300px;
+                height:131px;
+            }
+
+        }
+    }
+}
+
