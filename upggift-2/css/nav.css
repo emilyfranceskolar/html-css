@@ -3,6 +3,7 @@
     --nav-font-family: "Oswald", sans-serif;
     --nav-text-color:white; 
     --nav-hover-color: #d60305;
+    --nav-menu-padding: 24px;
     --nav-padding: 18px;
 }
 
@@ -13,27 +14,38 @@ nav {
     align-items: center;
     font-family: var(--nav-font-family);
     background-color: var(--nav-background-color);
-    padding: var(--nav-padding); 
+    padding: var(--nav-menu-padding); 
 
     div.capitol-logo { 
-        /* border: 1px solid green;    */
-        img {
-            /* border: 1px solid yellow; */
+       
+        a {
+            padding: 24px;
+            text-decoration: none;
+            font-family: "Permanent Marker", cursive;
+            font-weight: 400;
+            font-size: 32px;
+            color: white;
+        }
+        /* img {
+            border: 1px solid yellow;
             width: 250px;
             height: 72px;
             margin: 0 auto;
-        }
+        } */
     }
 
     div.menu {
         /* border: 1px solid yellow; */
         display: flex;
-        gap: 18px;
 
         a {
             color: var(--nav-text-color);
-            padding: var(--nav-padding);  
+            padding: var(--nav-padding); 
+            font-family: var(--nav-font-family);
+            font-weight: 500;
+            font-size: 16px;
             text-decoration: none;
+            text-transform: uppercase;
         }
         
         a:hover {

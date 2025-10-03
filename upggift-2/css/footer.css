@@ -1,10 +1,13 @@
 footer {
-    /* border: 1px solid red; */
     grid-area: footer;
     background-color: #01060b;
+    width: auto;
+    justify-items: center;
 
-    .container {
-        /* border: 1px solid #ff0000; */
+    .footer-container {
+        /* width: fit-content; -> mobil-anpassning? */
+        width: 80%;
+        margin: 0 auto;
         font-family: "Oswald", sans-serif;
         font-style: normal;
         background-color: #0d2743;
@@ -12,7 +15,7 @@ footer {
         padding-top: 24px;
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        
         
         .capitol-logo {
             margin: 0 auto;
@@ -23,23 +26,20 @@ footer {
                 font-size: 72px;
                 color: #ffd99f;
             }
-            /* img {
-                height: 72px;
-            } */
+           
         }
 
         .link-container {
             /* border: 1px solid red; */
-            padding: 24px 24px;
+            padding: 24px;
             display: flex;
             margin: 0 auto;
-            /* justify-content: center; */
             gap: 108px;
             
             .link-row {  
                 /* border: 1px solid red; */
                 h4 {
-                    color:#d60305;
+                    color:#ffd99f;
                     font-family: "Oswald", sans-serif;
                     font-weight: 300;
                     text-transform: uppercase;
@@ -62,10 +62,13 @@ footer {
         }
 
         .newsletter-container {
+            /* border: 1px solid pink; */
             display:flex;
             flex-direction: column;
             justify-content: center;
-            
+            gap: 12px;
+            padding: 1em 0 2em;
+
             .thin-divider{
                 background-color: #ffd99f;
                 width: 60%;
@@ -75,20 +78,20 @@ footer {
             }
 
             .newsletter {
+                padding-top: 24px;
                 font-family: "Oswald", sans-serif;
                 font-weight: 400;
                 font-size: 24px;
-                padding: 12px;
                 text-transform: uppercase;
                 margin: 0 auto;
 
             }
             .newsletter-link {
+                font-family: "Oswald", sans-serif;
                 margin: 0 auto;
-                padding: 12px;
+                padding-bottom: 24px;
                 a {
                     color:white;
-                    
                 }
             }
             
@@ -100,10 +103,9 @@ footer {
                height: 1px;
            }
             img.europa-cinema {
-                padding-top: 24px;
                 margin: 0 auto;
-                width:300px;
-                height:131px;
+                width:150px;
+                height:72px;
             }
 
         }
