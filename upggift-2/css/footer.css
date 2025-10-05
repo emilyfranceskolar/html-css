@@ -1,6 +1,5 @@
 footer {
     grid-area: footer;
-    background-color: #01060b;
     width: auto;
     justify-items: center;
 
@@ -12,7 +11,7 @@ footer {
         font-style: normal;
         background-color: #0d2743;
         color: white;
-        padding-top: 24px;
+        padding-top: 1em;
         display: flex;
         flex-direction: column;
         

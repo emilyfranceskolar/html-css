@@ -3,7 +3,7 @@
     --nav-font-family: "Oswald", sans-serif;
     --nav-text-color:white; 
     --nav-hover-color: #d60305;
-    --nav-menu-padding: 24px;
+    --nav-menu-padding: 18px;
     --nav-padding: 18px;
 }
 
@@ -12,9 +12,14 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-family: var(--nav-font-family);
+    position: sticky;
     background-color: var(--nav-background-color);
-    padding: var(--nav-menu-padding); 
+    border-bottom: 1px solid var(--nav-text-color);
+    font-family: var(--nav-font-family);
+    padding: var(--nav-menu-padding);
+    top: 0;
+    overflow: hidden;
+    z-index: 10;
 
     div.capitol-logo { 
        
