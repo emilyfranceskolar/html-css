@@ -3,6 +3,7 @@
     --nav-font-family: "Oswald", sans-serif;
     --nav-text-color:white; 
     --nav-hover-color: #d60305;
+    --nav-active-color: #ffd99f;
     --nav-menu-padding: 18px;
     --nav-padding: 18px;
 }
@@ -54,8 +55,7 @@ nav {
         }
         
         a.active {
-            background-color: var(--nav-hover-color);
-            color: var(--nav-text-color);
+            color: var(--nav-hover-color);
             padding: var(--nav-padding);
             text-decoration: none;
         }

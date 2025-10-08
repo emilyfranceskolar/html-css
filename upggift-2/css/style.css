@@ -1,5 +1,4 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css");
-
 :root {
     --main-font-color: white;
     --main-font-color-light: #ffd99f;
@@ -19,6 +18,7 @@ body {
     margin: 0;
     background-color:var(--main-background-color);
 }
+
  @keyframes fadeInUp {
     from {
         opacity: 0;
@@ -42,7 +42,7 @@ body {
 }
 
 main {
-    /* border: 1px solid purple; */
+    
     grid-area: main;
     background-color: var(--main-background-color);
     width: 100%;
@@ -55,7 +55,7 @@ main {
 
     .slider-container {
         border: 1px solid #cac8c5;
-        width: 60%;
+        width: 80%;
         height: 40%;
         margin: 3em auto;
         border-radius: 8px;
@@ -240,7 +240,7 @@ main {
             /* border: 1px solid purple;  */
             display: grid;
             grid-template-columns: repeat(3, 1fr);
-            column-gap: 144px;
+            column-gap: 48px;
             padding: 2em;
 
             .showing-item {
@@ -261,18 +261,24 @@ main {
                         display: flex;
                         justify-content: start;
                         align-items: start;
-                        gap: 64px;
+                        gap: 98px;
+
+                        .time {
+                            font-size: 1vw;
+                        }
 
                         .title {
                             /* border: 1px solid purple; */
-                            font-size: 1vw;
-                            padding: 0 12px 0;
+                            max-width: 200px;
+                            font-size: 1.2vw;
+                            padding: 0 18px 0;
                             color: var(--main-font-color-light);
                         }
 
                         a {
                             color: var(--main-font-color);
-                        }  
+                            font-size: 1vw;
+                        } 
                     }
                 }       
             }      
@@ -299,7 +305,7 @@ main {
         .visit-us-header {
             /* border: 1px solid purple; */
             text-transform: uppercase;
-            border-bottom: 1px solid var(--main-background-color-darksection);
+            border-bottom: 1px solid var(--main-background-color-dark);
             color: var(--main-font-color-dark);
             font-family: var(--main-font-family-text);
             font-weight: 500;
@@ -310,15 +316,18 @@ main {
         .visit-us-grid {
             display: grid;
             grid-template-columns: repeat(4, 1fr);
-            column-gap: 32px;
+            column-gap: 2em;
             padding: 2em;
-        }
-
-        .section {
-            border: 1.5px solid var(--main-background-color-section);
-            padding: 1em;
-            h4 {
-                text-transform: uppercase;
+            
+            section {
+                border: 1px solid var(--main-background-color-section);
+                padding: 1em;
+                /* font-size: 1vw; */
+                
+                h4 {
+                    color: var(--main-font-color-dark);
+                    /* text-transform: uppercase; */
+                }
             }
         }
     
