@@ -87,8 +87,7 @@ footer {
                 a {
                     color:white;
                 }
-            }
-            
+            }       
             .thin-divider-2{
                background-color: #ffd99f;
                width: 80%;
@@ -101,8 +100,107 @@ footer {
                 width:150px;
                 height:72px;
             }
-
         }
+    }
+
+    @media screen and (max-width: 599px){
+        
+    .footer-container {
+
+            width: 100%;
+            font-family: "Oswald", sans-serif;
+            font-style: normal;
+            background-color: #0d2743;
+            color: white;
+            padding: 1rem 0;
+            display: flex;
+            flex-direction: column;
+            justify-items: center;
+            gap: 0.5rem;
+        
+        .capitol-logo {
+            margin: 0 auto;
+            padding: 1em;
+            /* border: 1px solid red; */
+
+            h2 {
+                /* border: 1px solid red; */
+                font-family: "Permanent Marker", cursive;
+                font-weight: 400;
+                font-size: 3rem;
+                color: #ffd99f;
+            }
+        }
+
+        .link-grid {
+            /* border: 1px solid red; */
+            font-size: 2rem;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            
+            section {  
+                /* border: 1px solid blue; */
+                font-size: 1rem;
+                padding-left: 3rem;
+                h3 {
+                    color:#ffd99f;
+                    font-weight: 300;
+                    text-transform: uppercase;
+                }
+                a, p {
+                    text-decoration: none;
+                    color: white;
+                }
+                .icons {
+                    display: flex;
+                    gap: 1rem;
+                }
+            }
+        }
+
+        .newsletter-container {
+            /* border: 1px solid pink; */
+            display:flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 2rem;
+
+            .thin-divider{
+                background-color: #ffd99f;
+                width: 70%;
+                margin: 0 auto;
+                display: block;
+                height: 1px;
+            }
+
+            .newsletter {
+                font-weight: 400;
+                font-size: 1rem;
+                text-transform: uppercase;
+                margin: 0 auto;
+
+            }
+            .newsletter-link {
+                margin: 0 auto;
+                a {
+                    color:white;
+                }
+            }       
+            .thin-divider-2{
+               background-color: #ffd99f;
+               width: 80%;
+               margin: 0 auto;
+               display: block;
+               height: 1px;
+           }
+            img.europa-cinema {
+                margin: 0 auto;
+                width:150px;
+                height:72px;
+            }
+        }
+    }
     }
 }
 

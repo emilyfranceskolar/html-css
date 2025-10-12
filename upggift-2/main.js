@@ -1,13 +1,26 @@
-//  target all the slides (there are 5 slide divs for all the movies - return nodeList with elements that match) 
-const slides = document.querySelectorAll(".slide");
+// target the hamburger - returns the first element that matches
+const hamburger = document.querySelector('.hamburger');
+// target the nav links - returns the first element that matches
+const nav = document.querySelector('.menu');
+// set the varibel to false (ie the menu is hidden)
+
+hamburger.addEventListener('click', () => {  
+     nav.classList.toggle('nav--open');
+     hamburger.classList.toggle('hamburger--open')
+}); 
+
+
+
+//  target all the slides (there are 5 slide divs for all the movies - returns nodeList with elements that match) 
+const slides = document.querySelectorAll('.slide');
 // to target the slider-nav div - returns the first element that matches
-const sliderNav = document.querySelector(".slider-nav");
+const sliderNav = document.querySelector('.slider-nav');
 // to target the slider div
-const slider = document.querySelector(".slider")
+const slider = document.querySelector('.slider')
 // to target the slider-arrow prev div
-const prevBtn = document.querySelector(".prev")
+const prevBtn = document.querySelector('.prev')
 // to target the slider-arrow next div
-const nextBtn = document.querySelector(".next")
+const nextBtn = document.querySelector('.next')
  
 
 // variabel to keep track of current slide
@@ -18,12 +31,12 @@ let slideCount = slides.length;
 // loop through each of the slides, create nav dots for each slide 
 slides.forEach((_, index) => {
     // variabel to keep created div elements
-    const dot = document.createElement("div");
+    const dot = document.createElement('div');
     // to add nav-dov class to dot
-    dot.classList.add("nav-dot");
+    dot.classList.add('nav-dot');
 
     // when the index is 0 add the extra class active to it
-    if(index === 0)dot.classList.add("active");
+    if(index === 0)dot.classList.add('active');
 
     //create an eventlistner for each dot
      dot.addEventListener('click', () => {
@@ -33,12 +46,12 @@ slides.forEach((_, index) => {
 });
  
 //reference the dots
-const dots = document.querySelectorAll(".nav-dot");
+const dots = document.querySelectorAll('.nav-dot');
 
 // to update the dot according to the current slide
 function updateDots () {
     dots.forEach ((dot, index) => {
-        dot.classList.toggle("active", index === currentSlide);
+        dot.classList.toggle('active', index === currentSlide);
     });
 } 
 function gotToSlide(index) {
@@ -55,7 +68,7 @@ function gotToSlide(index) {
 
 //function to reset the animation by 
 function resetAnimation(slide) {
-     const content = slide.querySelector(".slide-content");
+     const content = slide.querySelector('.slide-content');
      // check if available 
      if (content) {
          const clone = content.cloneNode(true)
@@ -74,5 +87,5 @@ function handlePrevSlide () {
 }
 
 //evet listners for the Btns
-prevBtn.addEventListener("click", handlePrevSlide);
-nextBtn.addEventListener("click", handleNextSlide);
+prevBtn.addEventListener('click', handlePrevSlide);
+nextBtn.addEventListener('click', handleNextSlide);

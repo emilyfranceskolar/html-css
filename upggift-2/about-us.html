@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bio Capitol Göteborg</title>
+    <title>Om oss</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&family=Oswald:wght@200..700&family=Permanent+Marker&display=swap" rel="stylesheet">
@@ -19,21 +19,24 @@
 </head>
 <body>
     <div class grid-container>
-        <nav>
-            <div class="capitol-logo">
-                <a href="index.html">Bio Capitol</a>
-                <!-- <a><href="#"><img src="https://www.capitolgbg.se/wp-content/uploads/2019/06/cropped-cropped-capitoljusterad-2-1-7.jpg" alt="Logo för Bio Capitol"></a> -->
-                <!-- <span>Bio</span><span class="target-word"><strong>Captiol</strong></span> -->
+         <header>
+            <div class="container">
+                <div class="logo">
+                    <a href="index.html">Bio Capitol</a>
+                </div>
+                 <div class="hamburger">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+                <nav class="menu">
+                    <a href="films.html">Filmer</a>
+                    <a href="events.html">Evenemang</a>
+                    <a href="gift-card.html">Presentkort</a>
+                    <a class="active" href="about-us.html">Om Oss</a>  
+                </nav>
             </div>
-        
-            <div class="menu">
-                <a href="films.html">Filmer</a>
-                <a href="events.html">Evenemang</a>
-                <a href="gift-card.html">Presentkort</a>
-                <a class="active" href="about-us.html">Om Oss</a>
-            </div>
-        </nav>
-
+        </header>
         <main>
             <div class="about-us-container">
                 <section>
@@ -58,7 +61,7 @@
             </div>
             <div class="hero-container">
                 <section>
-                    <h2>Vill du hyra Bio Capitol?</h2>
+                    <h2 class="title">Vill du hyra Bio Capitol?</h2>
                     <p>Hos oss får du en alldeles unik och mysig miljö med möjligheter att göra en högst personlig filmupplevelse!</p>
                     <div class="links-container">
                         <a href="#">Hyra Salong</a>
