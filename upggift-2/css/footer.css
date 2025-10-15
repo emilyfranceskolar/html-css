@@ -1,71 +1,63 @@
 footer {
     grid-area: footer;
-    width: auto;
     justify-items: center;
     background-color: black;
 
     .footer-container {
-        /* width: fit-content; -> mobil-anpassning? */
         width: 80%;
-        /* margin: 0 auto; */
         font-family: "Oswald", sans-serif;
         font-style: normal;
         background-color: #0d2743;
         color: white;
-        padding: 2em 0;
+        padding: 2rem 0;
         display: flex;
         flex-direction: column;
         justify-items: center;
-        gap: 1em;
+        gap: 1rem;
         
         .capitol-logo {
             margin: 0 auto;
-            padding: 1em;
-            /* border: 1px solid red; */
 
             h2 {
-                /* border: 1px solid red; */
                 font-family: "Permanent Marker", cursive;
                 font-weight: 400;
-                font-size: 6vw;
+                font-size: 6rem;
                 color: #ffd99f;
             }
         }
 
         .link-grid {
-            /* border: 1px solid red; */
-            font-size: 1.2vw;
+            font-size: 1.2rem;
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             align-items: start;
+            justify-content: center;
             margin: 0 auto;
-            gap: 4em;
+            gap: 3rem;
             
             section {  
-                /* border: 1px solid blue; */
-                padding-left: 3em;
+                padding-left: 2rem;
+                margin: 0 auto;
                 h3 {
                     color:#ffd99f;
                     font-weight: 300;
                     text-transform: uppercase;
                 }
                 a, p {
-                    text-decoration: none;
                     color: white;
                 }
                 .icons {
                     display: flex;
-                    gap: 1.8em;
+                    gap: 1.8rem;
                 }
             }
         }
 
         .newsletter-container {
-            /* border: 1px solid pink; */
             display:flex;
             flex-direction: column;
             justify-content: center;
-            gap: 2em;
+            gap: 1.2rem;
 
             .thin-divider{
                 background-color: #ffd99f;
@@ -77,12 +69,13 @@ footer {
 
             .newsletter {
                 font-weight: 400;
-                font-size: 1.2vw;
+                font-size: 1.4rem;
                 text-transform: uppercase;
                 margin: 0 auto;
 
             }
             .newsletter-link {
+                font-size: 1.2rem;
                 margin: 0 auto;
                 a {
                     color:white;
@@ -101,106 +94,121 @@ footer {
                 height:72px;
             }
         }
-    }
-
-    @media screen and (max-width: 599px){
-        
-    .footer-container {
-
-            width: 100%;
-            font-family: "Oswald", sans-serif;
-            font-style: normal;
-            background-color: #0d2743;
-            color: white;
-            padding: 1rem 0;
-            display: flex;
-            flex-direction: column;
-            justify-items: center;
-            gap: 0.5rem;
-        
-        .capitol-logo {
-            margin: 0 auto;
-            padding: 1em;
-            /* border: 1px solid red; */
-
-            h2 {
-                /* border: 1px solid red; */
-                font-family: "Permanent Marker", cursive;
-                font-weight: 400;
-                font-size: 3rem;
-                color: #ffd99f;
-            }
-        }
-
-        .link-grid {
-            /* border: 1px solid red; */
-            font-size: 2rem;
-            display: flex;
-            flex-direction: column;
-            gap: 16px;
-            
-            section {  
-                /* border: 1px solid blue; */
-                font-size: 1rem;
-                padding-left: 3rem;
-                h3 {
-                    color:#ffd99f;
-                    font-weight: 300;
-                    text-transform: uppercase;
-                }
-                a, p {
-                    text-decoration: none;
-                    color: white;
-                }
-                .icons {
-                    display: flex;
-                    gap: 1rem;
-                }
-            }
-        }
-
-        .newsletter-container {
-            /* border: 1px solid pink; */
-            display:flex;
-            flex-direction: column;
-            justify-content: center;
-            gap: 2rem;
-
-            .thin-divider{
-                background-color: #ffd99f;
-                width: 70%;
-                margin: 0 auto;
-                display: block;
-                height: 1px;
-            }
-
-            .newsletter {
-                font-weight: 400;
-                font-size: 1rem;
-                text-transform: uppercase;
-                margin: 0 auto;
-
-            }
-            .newsletter-link {
-                margin: 0 auto;
-                a {
-                    color:white;
-                }
-            }       
-            .thin-divider-2{
-               background-color: #ffd99f;
-               width: 80%;
-               margin: 0 auto;
-               display: block;
-               height: 1px;
-           }
-            img.europa-cinema {
-                margin: 0 auto;
-                width:150px;
-                height:72px;
-            }
-        }
-    }
     }
 }
 
+@media screen and (max-width: 599px) {
+    footer {
+        .footer-container {
+                width: 100%; 
+                padding: 1rem 0;
+                gap: 0.3rem;
+                
+            .capitol-logo {
+
+                h2 {
+                    font-weight: 200;
+                    font-size: 3rem;  
+                }
+            }
+            .link-grid {
+                width: 90%;
+                font-size: 1rem;
+                display: flex;
+                flex-wrap: wrap;
+                align-items: start;
+                justify-content: start;
+                padding: 0.5rem 0;
+                gap: 0.75rem;
+                
+                section {  
+                    padding-left: 0;
+
+                    a, p {
+                        color: white;
+                    }
+                    .icons {
+                        gap: 1.5rem;
+                    }
+                }
+            }
+            .newsletter-container {
+                gap: 0.75rem;
+
+                .thin-divider{
+                    width: 90%;
+                }
+
+                .newsletter {
+                    font-size: 1.1rem;
+                }
+                .newsletter-link {
+                    font-size: 1rem;
+                }       
+                .thin-divider-2{
+                    width: 90%;
+                }
+                img.europa-cinema {
+                    width:75px;
+                    height:36px;
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 768px) and (min-width: 600px) {
+    footer {
+        .footer-container {
+            width: 90%;
+            padding: 1rem 0;
+            
+            .capitol-logo {
+
+                h2 {
+                    font-size: 4rem;
+                }
+            }
+            .link-grid {
+                font-size: 1rem;
+                gap: 2rem;
+                
+                section {  
+                    padding-left: 1rem;
+
+                    h3 {
+                        color:#ffd99f;
+                        font-weight: 300;
+                        text-transform: uppercase;
+                    }
+                }
+            }
+            .newsletter-container {
+                .thin-divider{
+                    width: 80%;
+                }
+
+                .newsletter {
+                    font-size: 1.2rem;
+                }
+                .newsletter-link {
+                    font-size: 1rem;
+                }       
+                .thin-divider-2{
+                    width: 80%;
+                }
+                img.europa-cinema {
+                    width: 100px;
+                    height:48px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1400px) and (min-width: 768px){
+    footer {
+        .footer-container {
+            width: 100%;
+        }
+    }
+}

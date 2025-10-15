@@ -4,6 +4,7 @@ const hamburger = document.querySelector('.hamburger');
 const nav = document.querySelector('.menu');
 // set the varibel to false (ie the menu is hidden)
 
+// eventlistner for hamburger and nav toggle
 hamburger.addEventListener('click', () => {  
      nav.classList.toggle('nav--open');
      hamburger.classList.toggle('hamburger--open')
@@ -86,6 +87,6 @@ function handlePrevSlide () {
     gotToSlide(currentSlide - 1);
 }
 
-//evet listners for the Btns
+//evetlistners for the Btns
 prevBtn.addEventListener('click', handlePrevSlide);
 nextBtn.addEventListener('click', handleNextSlide);
